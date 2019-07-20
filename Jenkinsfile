@@ -15,6 +15,13 @@ pipeline {
                 }
             }
         }
-        
+        stage('--deploy to staging--') {
+            steps {
+                echo '--deploy to staging--'
+                build job: 'deploy-to-staging'
+                //bat 'mvn clean package'
+                //bat "docker build . -t tomcatwebapp:${env.BUILD_ID}"
+
+            }
     }
 }
