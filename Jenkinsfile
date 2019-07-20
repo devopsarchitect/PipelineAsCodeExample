@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo '--build--'
                 bat 'mvn clean package'
-                bat "docker build . -t tomcatwebapp:${env.BUILD_ID}"
+                //bat "docker build . -t tomcatwebapp:${env.BUILD_ID}"
 
             }
         }git status
