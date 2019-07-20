@@ -21,7 +21,8 @@ pipeline {
                 build job: 'deploy-to-staging'
                 //bat 'mvn clean package'
                 //bat "docker build . -t tomcatwebapp:${env.BUILD_ID}"
-
             }
+
+        }
     }
 }
