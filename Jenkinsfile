@@ -17,7 +17,7 @@ pipeline {
         }
         stage('--deploy to staging--') {
             steps {
-                echo '--deploy to staging--'
+                echo '--deploy to staging-- pipelineAsCode-IAC'
                 build job: 'deploy-to-staging'
                 //bat 'mvn clean package'
                 //bat "docker build . -t tomcatwebapp:${env.BUILD_ID}"
