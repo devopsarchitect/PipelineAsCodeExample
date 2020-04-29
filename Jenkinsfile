@@ -29,7 +29,7 @@ pipeline {
 				timeout(time:5, unit:'DAYS'){
 					input message:'Approve PRODUCTION Deploymernt'
 					}
-                build job: 'deploy-to-prod'
+                build job: 'deploy-to-prod-pipelinsAScode'
                 //bat 'mvn clean package'
                 //bat "docker build . -t tomcatwebapp:${env.BUILD_ID}"
             }
