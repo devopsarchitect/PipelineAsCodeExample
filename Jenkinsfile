@@ -26,8 +26,8 @@ pipeline {
         }
 		stage('--deploy to Production--deploy-to-prod--') {
             steps {
-				timeout(time:5, unit: 'DAYS'){
-					input message: Aprove PRODUCTION Deploymrnt!1'
+				timeout(time:5, unit:'DAYS'){
+					input message: Approve PRODUCTION Deploymernt'
 					}
                 build job: 'deploy-to-prod'
                 //bat 'mvn clean package'
