@@ -24,5 +24,15 @@ pipeline {
             }
 
         }
+		stage('--deploy to Production--deploy-to-prod--') {
+            steps {
+                echo '--deploy to deploy-to-prod-- pipelineAsCode-IAC'
+                build job: 'deploy-to-prod'
+                //bat 'mvn clean package'
+                //bat "docker build . -t tomcatwebapp:${env.BUILD_ID}"
+            }
+
+        }
     }
+
 }
